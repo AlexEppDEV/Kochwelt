@@ -1,0 +1,163 @@
+header {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400; /* normal */
+  font-size: 16px;
+  box-sizing: border-box; /*  rechnet padding mit ein damit es 
+    keinen doppelten abstand gibt */
+  }
+
+.navbar {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 20px 0;
+  padding-right: 180px;
+  padding-left: 180px;
+  background: white;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 4px 6px -4px rgba(0,0,0,0.3); 
+  height: 160px;
+  
+}
+
+.logo {
+	height: 80px;
+	width: 250px;
+	
+}
+
+.nav-links {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  /* font-size: 16px; */
+  font-weight: 400;
+  padding-bottom: 20px;
+  border-bottom: 3px solid transparent; 
+  transition: color 0.3s ease, border-bottom-color 0.3s ease;
+}
+.nav-links a:hover {
+      color: green;
+	  border-bottom-color: green;
+	  
+}
+
+
+.burger {
+  display: none;        
+  font-size: 28px;      
+  cursor: pointer;
+  position: absolute;   
+  right: 20px;          
+  top: 25px;            
+  z-index: 1;        
+}
+.burger-menu {
+display: none;
+flex-direction: column;
+background-color: rgb(240, 240, 240);
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+position: absolute;
+top: 70px; 
+right: 20px;
+padding: 10px;
+border-radius: 8px;
+
+}
+
+.burger-menu a {
+padding: 10px;
+text-decoration: none;
+color: #333;
+border-radius: 8px;
+}
+
+.burger-menu a:hover {
+background-color: rgb(0, 128, 0);
+color: white;
+}
+.burger-menu.open {
+  display: flex;
+}
+/* Fonts typ */
+@font-face {
+    font-family: "Raleway";
+    src: url("./fonts/Raleway/Raleway-Regular.ttf") format("truetype");
+    font-weight: 400; /* normal */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("./fonts/Raleway/Raleway-Bold.ttf") format("truetype");
+    font-weight: 700; /* fett */
+    font-style: normal;
+}
+
+@media (min-width: 767px) and (max-width: 1280px) {
+  header {
+    font-size: 14px;
+  }
+  
+
+
+ .navbar {
+  height: 140px;
+  padding-right: 80px;
+  padding-left: 80px;
+  
+
+ }
+
+ .logo {
+    width: 200px;
+    height: 64px;
+    border-radius: 16px;
+ }
+
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+header {
+    font-size: 14px;
+  }
+
+
+.navbar {
+  height: 100px;
+  padding-right: 40px;
+  padding-left: 40px;
+  display: none;
+  
+
+ }
+ .burger {
+  display: block; 
+  }
+
+ .logo {
+    width: 120px;
+    height: 40px;
+    border-radius: 12px;
+ }
+
+
+}
+
+@media (max-width: 440px) {
+  .portionen-inputs input {
+    padding: 12px 0px;
+    font-size: 14px;
+  }
+  .portionen-inputs button {
+    padding: 12px 8px;
+    font-size: 14px;
+  }
+}

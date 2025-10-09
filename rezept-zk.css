@@ -1,0 +1,427 @@
+body {
+	font-family: 'Raleway', sans-serif;
+  	font-size: 16px;
+  	margin: 0;
+  	font-weight: 400;
+} 
+header {
+  	height: 130px;
+  	position: relative;
+}
+.html {
+  	scroll-behavior: smooth;
+}
+h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700; /* fett */
+    font-size: 42px;
+
+}
+
+h2 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700; /* fett */
+    font-size: 32px;
+
+}
+h3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700; /* fett */
+    font-size: 24px;
+
+}
+
+.headline-zimtkuchen {
+    /* font-size: 42px; */
+    font-weight: 700;
+    margin-bottom: 24px;
+    margin-top: 0;
+}
+.content {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 130px 180px; 
+    height: auto;
+    box-sizing: border-box;
+}
+
+.food-zimtkuchen {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.info-boxes-zimtkuchen {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.info-box-zimtkuchen {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #eee;
+    border-radius: 12px;
+    padding: 8px 8px; 
+    font-size: 16px; 
+    font-weight: 400;
+    color: #000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    height: 16px;
+}
+
+
+
+.icon-zimtkuchen {
+    width: 16px;
+    height: 16px;
+}
+
+.zutaten-section-zimtkuchen {
+    margin-top: 48px;
+    border-top: 1px solid #f0f0f0;
+    border-radius: 20px;
+    margin-bottom: 48px;
+    position: relative;
+}
+
+.portionen-box-zimtkuchen {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.portionen-inputs-zimtkuchen {
+    display: flex;
+}
+
+.portionen-inputs-zimtkuchen input {
+    width: 70px;
+    padding: 12px 32px;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+    text-align: start;
+    font-size: 16px;
+}
+
+.portionen-inputs-zimtkuchen input:focus {
+    outline: none;
+}
+
+.portionen-inputs-zimtkuchen button {
+    background-color: rgb(0, 128, 0);
+    color: #fff;
+    border: 1px solid #ccc;
+    padding: 12px 32px;
+    font-size: 16px;
+    cursor: pointer;
+   
+}
+
+.portionen-inputs-zimtkuchen button:hover {
+    background-color: rgb(0, 150, 0);
+}
+
+.zutaten-tabelle-zimtkuchen {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.zutaten-tabelle-zimtkuchen td {
+    padding: 12px 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.zutaten-tabelle-zimtkuchen tr:nth-child(even) {
+    background-color: #fff;
+}
+
+.zutaten-tabelle-zimtkuchen tr:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+.zutaten-tabelle-zimtkuchen tr:nth-child(odd) td:first-child {
+    border-radius: 12px;
+}
+
+.zubereitung-section-zimtkuchen {
+    margin-bottom: 48px;
+}
+
+.zubereitung-infos-zimtkuchen {
+    display: flex;
+    gap: 16px;
+    margin: 24px 0 48px 0;
+}
+
+.zubereitung-text-zimtkuchen p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+}
+
+.created-by-zimtkuchen {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+.created-by-zimtkuchen h3 {
+    margin: 0;
+}
+
+.author-box-zimtkuchen {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    padding-top: 24px;
+}
+
+.author-img-zimtkuchen {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+
+}
+
+.author-name-zimtkuchen {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    position: relative;
+
+}
+
+
+
+@media (max-width: 1280px) {
+  h1 { 
+    font-size: 36px;
+}
+  h2 {
+    font-size: 30px;
+
+  }
+  h3 { 
+    font-size: 24px; 
+}
+    .content { 
+        margin: 0 auto;
+        padding: 90px 80px;
+       
+    }
+    
+    /* .headline-zimtkuchen { 
+        font-size: 42px; 
+    } */
+    .info-boxes-zimtkuchen { 
+        flex-wrap: wrap; 
+    }
+
+    .info-boxes-zimtkuchen {
+        display: flex;
+         
+    }
+    .author-img-zimtkuchen {
+    width: 60px;
+    height: 60px;
+    
+}
+
+
+    .zubereitung-text-zimtkuchen { 
+        font-size: 16px; 
+    }
+}
+
+
+
+@media (max-width: 768px) {
+      h1 { 
+    font-size: 24px;
+    
+}
+  h2 {
+    font-size: 20px;
+
+  }
+  h3 { 
+    font-size: 18px; 
+}
+    .info-boxes-zimtkuchen {
+        display: flex;
+        flex-direction: column;       
+    }
+
+   .zubereitung-infos-zimtkuchen {
+       display: flex;
+       flex-direction: column;  
+   }
+
+    .content{
+        padding: 40px 8px;
+       
+       
+    }
+    .created-by-zimtkuchen {
+        max-width: 90%;
+        /* padding: 0 8px; */
+        /* top:  -100px;  */
+    }
+    .author-img-zimtkuchen {
+        width: 50px;
+        height: 50px;
+        top: -5px;
+    }
+    .author-name-zimtkuchen {
+        font-size: 16px;
+
+    }
+
+
+    .food-zimtkuchen { 
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 12px;
+        
+    }
+}
+
+/* @media (max-width: 480px) {
+
+    .headline-zimtkuchen { 
+        font-size: 32px; 
+    }
+
+    .portionen-box-zimtkuchen {
+        font-size: 16px;
+    }
+} */
+
+
+
+@media (max-width: 480px) {
+
+    .author-img-zimtkuchen {
+        width: 50px;
+        height: 50px;
+      
+        right: 0px;  
+    }
+
+    .author-name-zimtkuchen {
+        font-size: 16px;
+       
+    }
+}
+
+/* @media (max-width: 320px) {
+    .content {
+        padding: 0 8px;
+
+
+    }
+} */
+
+/* button */
+.portionen-inputs {
+  box-sizing: border-box;
+  display: flex;
+  padding-top: 5px;
+  padding-bottom: 20px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.portionen-inputs input {
+  width: 70px;
+  padding: 12px 32px;
+  border: 1px solid #ccc;
+  border-right: none; 
+  border-radius: 8px 0 0 8px; 
+  text-align: start;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+.portionen-inputs input:focus {
+  outline: none;   
+}
+
+.portionen-inputs button {
+  background-color: rgb(0, 128, 0);
+  color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 12px 32px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Raleway', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.portionen-inputs button:hover {
+  background-color: rgb(0, 150, 0);
+}
+label {
+    padding-right: 6px;
+}
+
+/*  Tablets & kleine Laptops: 768px – 1280px */
+@media (min-width: 768px) and (max-width: 1280px) { 
+    .portionen-inputs {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+}
+
+/*  Smartphones: 320px – 767px */
+@media (min-width: 320px) and (max-width: 767px) { 
+    .portionen-inputs {
+ 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+}
+
+@media (max-width: 440px) {
+  .portionen-inputs input {
+    padding: 8px 8px;
+    font-size: 16px;
+  }
+  .portionen-inputs button {
+    padding: 8px 8px;
+    font-size: 16px;
+  }
+}
+
+/* Fonts typ */
+@font-face {
+    font-family: "Raleway";
+    src: url("./fonts/Raleway/Raleway-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("./fonts/Raleway/Raleway-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}

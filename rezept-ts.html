@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thunfischsalat</title>
+    <link rel="stylesheet" href="rezept-ts.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="icon" href="./img/logos/logo_small.png" type="image/png">
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("burgerMenu");
+        menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+      }
+    </script>
+    
+    
+</head>
+<body>
+  <header>
+    <section>
+      <div class="navbar">
+        <a href="index.html">
+        <img class="logo" src="img/logos/logo.png">
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Start</a></li>
+          <li><a href="rezept-ts.html" class="rezept-link">Rezept des Tages</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="Impressum.html">Impressum</a></li>
+        </ul>
+      </div>
+
+      <div class="burger" onclick="toggleMenu()">
+        &#9776;  
+      </div>
+        
+
+      <div id="burgerMenu" class="burger-menu">
+        <a href="index.html">Start</a>
+        <a href="rezept-ts.html">Rezept des Tages</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="Impressum.html">Impressum</a>
+      </div>
+
+    </section>
+    
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Thunfischsalat</h1>
+      <img class="salatImg"  src="./img/rezept-1/salat.jpg" alt="Thunfischsalat">
+      <div class="workInfo">
+        <div class="work">
+          <img class="workLogo"  src="./img/logos/clock-regular.svg" alt="Time">
+          <p>15 Min.</p>
+        </div>
+
+        <div class="work">
+          <img class="workLogo" src="./img/logos/brain-solid.svg" alt="Difficulty level">
+          <p>Leicht</p>
+        </div>
+
+        <div class="work">
+          <img class="workLogo" src="./img/logos/calendar-alt-regular.svg" alt="Datum">
+          <p>14.09.2025</p>
+        </div>
+        
+      </div>    
+      <div class="line">
+        <p></p>
+      </div>
+    </section>
+
+     <!-- button -->
+    <section class="portionen-inputs">
+      <label for="portionNumber">zutaten für </label>
+      <input  type="number" min="1" max="20" step="1" value="4" id="portionNumber" oninput="this.value = Math.max(1, Math.min(20, this.value))">
+      
+      <button id="myButton">Portionen</button>
+
+    </section>
+
+        <table>
+      <tr>
+        <td id="thunfisch" class="tdColor">2 Dosen (370 g) Thunfisch im eingenen Saft</td>
+      </tr>
+      <tr>
+        <td id="zwiebel">1 rote Zwiebel</td>
+      </tr>
+      <tr>
+        <td id="tomaten" class="tdColor">2 aromatische Tomaten</td>
+      </tr>
+      <tr>
+        <td id="paprikaschoteGrün">1 Paprikaschote, grün </td>
+      </tr>
+
+      <tr class="tdColor">
+        <td id="paprikaschoteRot">1 Paprikaschote, rot </td>
+      </tr>
+
+      <tr>
+        <td id="petersilie">15 g glatte Petersilie</td>
+      </tr>
+      <tr class="tdColor">
+        <td id="olivenöl">4 El Olivenöl</td>
+      </tr>
+      <tr>
+        <td id="balsamico">2 TL weißer Balsamico-Essig</td>
+      </tr>
+      <tr class="tdColor">
+        <td id="zitronensaft">0.5 TL frischer Zitronensaft</td>
+      </tr>
+      <tr>
+        <td id="zitronenschalen">0.5 TL Zitronenschalen Abrieb</td>
+      </tr>
+      <tr class="tdColor">
+        <td id="meersalz">1 TL Meersalz</td>
+      </tr>
+      <tr>
+        <td>Msp schwarzer Pfeffer</td>
+      </tr>
+    </table>
+
+
+
+    <!-- zubereitung -->
+    <section class="zubereitung" >
+      <h2>Zubereitung</h2>
+      <div class="workInfo">
+        <div class="work">
+            <img class="workLogo"  src="./img/logos/clock-regular.svg" alt="Time">
+            <p> Vorbereitungszeit 10 Min.</p>
+        </div>
+
+        <div class="work">
+            <img class="workLogo"  src="./img/logos/clock-regular.svg" alt="Time">
+            <p>Zubereitungszeit 5 Min.</p>
+        </div>
+
+        <div class="work">
+            <img class="workLogo"  src="./img/logos/clock-regular.svg" alt="Time">
+            <p>Gesamtzeit ca 15 Min.</p>
+        </div>
+      </div>
+      <ol>
+        <li>
+        <strong>Schnippeln:</strong> Paprika und Tomaten schneidest in kleine Würfel am besten auf einem stabilen Brett und mit einem kurzen scharfen Gemüsemesser. 
+        Dieses verwendest Du auch, um die glatte Petersilie fein zu schneiden.
+        </li>
+        <li>
+        <strong>Thunfisch vorbereiten:</strong> Den Doseninhalt drückst Du entweder mit dem Deckel aus oder gibst den Thunfisch in ein Sieb und lässt ihn darin gut abtropfen. 
+        Mit einer Gabel zerdrückst Du den Thunfisch in mundgerechte Stücke.
+        </li>
+        <li>
+        <strong>Thunfischsalat Dressing:</strong> Olivenöl, weißen Balsamico, 
+        frischen Zitronensaft und den Zitronenabrieb mit den Gewürzen in einer Schüssel vermischen.
+        </li>
+        <li>
+        <strong>Salat Zutaten vermengen:</strong> Alle Zutaten mischst Du in einer großen Schüssel. 
+        Den bunten Salat mit Thunfisch kannst Du sofort servieren oder im Kühlschrank noch etwas durchziehen lassen.
+        </li>
+      </ol>
+      
+
+      <h3>Rezept erstellt von</h3>
+      <div class="profil">
+        <img class="profilLogo"  src="./img/rezept-1/profile.png" alt="profile foto">
+        <p>Alex Epp</p>
+      </div>
+      
+    </section>
+
+  </main>
+
+  <footer id="footer">
+    <section>
+      <div class="impressum-img">
+        <a href="index.html" target="_blank"> 
+          <img src="./img/logos/kochwelt-footer-logo.png" alt="logo Kochwelt">
+        </a>
+        <div class="impressum">
+          <a id="impressum" href="./Impressum.html" target="_blank">Impressum</a>
+          <a href="./datenschutzerklärung.html" target="_blank">Datenschutzerklärung</a>
+        </div>
+      </div>
+      
+      <div class="footer-logo">
+        <a href="https://www.facebook.com/" target="_blank">
+            <img src="./img/logos/Find-us-on-facebook.svg.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/" target="_blank">
+            <img src="./img/logos/follow-us-on-instagram.jpg" alt="instagram"></a>
+        <a href="https://x.com/" target="_blank"
+            ><img src="./img/logos/follow-us-on-twitter.png" alt="twitter"></a>
+      </div>
+    </section>
+  </footer>
+  
+
+</body>
+<script src="./rezept-ts.js"></script>
+<!-- <script src="rezept-2script.js"></script> -->
+</html>

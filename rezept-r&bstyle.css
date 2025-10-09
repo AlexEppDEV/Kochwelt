@@ -1,0 +1,371 @@
+body {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400; /* normal */
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+}
+.headline {
+  margin-top: 0;
+  font-size: 42px;
+}
+section {
+    width: 100%;
+    margin: 0;
+}
+.html {
+  scroll-behavior: smooth;
+}
+.food {
+  width: 100%;
+  height: 250px;
+	object-fit: cover;
+	border-radius: 20px;
+
+}
+.content {
+    max-width: 1440px;
+    width: 100%;
+    padding: 130px 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.info-boxes {
+  display: flex;
+  gap: 16px;              
+  margin-top: 24px; 
+}
+.icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+}
+.info-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #eee;     
+  border-radius: 12px;    
+  padding: 8px 8px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+  height: 16px;
+}
+
+.info-box .icon {
+  font-size: 16px;
+}
+ .zutaten-section {
+    margin-top: 43px; /* minus 5 paddig-top*/
+    font-family: 'Raleway', sans-serif;
+    border-top: 2px solid rgb(240, 240, 240);
+    padding-top: 5px; 
+    margin-bottom: 48px;
+  }
+
+.portionen-box {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.portionen-inputs {
+  display: flex;
+}
+
+.portionen-inputs input {
+  width: 70px;
+  padding: 12px 32px;
+  border: 1px solid #ccc;
+  border-right: none; 
+  border-radius: 8px 0 0 8px; 
+  text-align: start;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+.portionen-inputs input:focus {
+  outline: none;   
+}
+
+.portionen-inputs button {
+  background-color: rgb(0, 128, 0);
+  color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 12px 32px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Raleway', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.portionen-inputs button:hover {
+  background-color: rgb(0, 150, 0);
+}
+
+.zutaten-tabelle {
+  width: 100%;
+  border-collapse: collapse;   
+  background: transparent;
+  font-family: 'Raleway', sans-serif;
+}
+ 
+.zutaten-tabelle td {
+  padding: 12px 16px;
+  font-weight: 400;
+  border: none;
+}
+
+.zutaten-tabelle tr:last-child td {
+  border-bottom: none;
+}
+
+.zutaten-tabelle tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.zutaten-tabelle tr:nth-child(odd) {
+  background-color: rgb(240, 240, 240);
+  
+}
+.zutaten-tabelle tr:nth-child(odd) td:first-child {
+  border-radius: 12px;
+}
+.zubereitung-infos {
+	display: flex;
+  gap: 16px;
+  margin-bottom: 48px;
+	margin-top: 24px;
+}
+
+.zubereitung-text {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #000000;
+}
+.zubereitung-section {
+  margin-bottom: 48px;
+}
+
+
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  margin-top: 0;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  /* padding: 10px 16px; */
+  /* padding-bottom: 130px; */
+}
+
+.author-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; 
+  object-fit: cover;
+}
+
+.author-name {
+  font-size: 24px;
+  font-weight: 400;
+  color: #000000;
+}
+
+
+/* Fonts typ */
+@font-face {
+    font-family: "Raleway";
+    src: url("./fonts/Raleway/Raleway-Regular.ttf") format("truetype");
+    font-weight: 400; /* normal */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("./fonts/Raleway/Raleway-Bold.ttf") format("truetype");
+    font-weight: 700; /* fett */
+    font-style: normal;
+}
+
+
+
+
+@media (min-width: 767px) and (max-width: 1280px) {
+  .headline {
+  /* margin-top: 90px; */
+  font-size: 36px;
+    font-weight: 700;
+}
+
+  h2 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .content {
+    padding: 90px 80px;
+
+}
+
+  .author-name {
+    font-size: 18px;
+    font-weight: 400;
+  }
+ body {
+  font-size: 16px;
+  font-weight: 400;
+ }
+ .navbar {
+  height: 140px;
+  padding-right: 80px;
+  padding-left: 80px;
+
+ }
+
+ .logo {
+    width: 200px;
+    height: 64px;
+    border-radius: 16px;
+ }
+ .food {
+  height: 200px;
+  border-radius: 16px;
+ }
+ .author-img {
+  width: 60px;
+  height: 60px;
+  
+ }
+ .info-box {
+  height: 14px;
+  border-radius: 10px;
+ }
+
+ .zutaten-tabelle {
+  font-size: 16px !important;
+ }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .content {
+    padding: 40px 8px;
+
+}
+  .headline {
+    font-size: 24px;
+    /* margin-top: 60px; */
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .author-name {
+    font-size: 18px;
+    font-weight: 400;
+  }
+ body {
+  font-size: 16px;
+  font-weight: 400;
+ }
+.nav-links {
+  height: 100px;
+  padding-right: 40px;
+  padding-left: 40px;
+  display: none;
+
+ }
+ .burger {
+  display: block;
+  right: 8px; 
+  }
+
+ .logo {
+    width: 200px;
+    height: 64px;
+    border-radius: 16px;
+    
+ } 
+ .food {
+  height: 160px;
+  border-radius: 12px;
+ }
+ .author-img {
+  width: 48px;
+  height: 48px;
+  
+ }
+ .info-boxes {
+   display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+  padding-top: 16px;
+  padding-bottom: 32px;
+  flex-direction: column;
+  margin: 0;
+ }
+ .zubereitung-infos {
+   display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+  padding-top: 16px;
+  padding-bottom: 32px;
+  flex-direction: column;
+  margin: 0;
+ }
+}
+@media (max-width: 440px) {
+  .portionen-inputs input {
+    padding: 8px 8px;
+    font-size: 16px;
+    
+  }
+  .portionen-inputs button {
+    padding: 8px 8px;
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 767px) {
+ 
+  .logo{
+    display: block;
+    
+  }
+  .navbar {
+    padding-left: 8px;
+  }
+}
+

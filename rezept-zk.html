@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rezept-zk.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="icon" href="./img/logos/logo_small.png" type="image/png">
+    <script src="rezept-zk.js"></script>
+
+    <title>Zimtkuchen</title>
+
+        <script>
+      function toggleMenu() {
+        const menu = document.getElementById("burgerMenu");
+        menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+      }
+    </script>
+</head>
+ 
+<body>
+
+    <header>
+        <section>
+          <div class="navbar">
+            <a href="index.html">
+            <img class="logo" src="img/logos/logo.png">
+            </a>
+            <ul class="nav-links">
+              <li><a href="index.html">Start</a></li>
+              <li><a href="rezept-zk.html" class="rezept-link">Rezept des Tages</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+              <li><a href="Impressum.html">Impressum</a></li>
+            </ul>
+          </div>
+    
+          <div class="burger" onclick="toggleMenu()">
+            &#9776;  
+          </div>
+            
+    
+          <div id="burgerMenu" class="burger-menu">
+            <a href="index.html">Start</a>
+            <a href="rezept-ts.html">Rezept des Tages</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="Impressum.html">Impressum</a>
+          </div>
+    
+        </section>
+        
+      </header>
+
+    <div class="content">
+        <h1 class="headline-zimtkuchen">Zimtkuchen</h1>
+        <img class="food-zimtkuchen" src="./img/zimtkuchen.jpg" alt="Zimtkuchen">
+
+        <div class="info-boxes-zimtkuchen">
+            <div class="info-box-zimtkuchen">
+                <img src="./img/logos/clock-regular.svg" alt="Uhr Icon" class="icon-zimtkuchen">
+                <span class="text-zimtkuchen">45-50 Min.</span>
+            </div>
+            <div class="info-box-zimtkuchen">
+                <img src="./img/logos/brain-solid.svg" alt="Brain Icon" class="icon-zimtkuchen">
+                <span class="text-zimtkuchen">Mittel</span>
+            </div>
+            <div class="info-box-zimtkuchen">
+                <img src="./img/logos/calendar-alt-regular.svg" alt="Datum Icon" class="icon-zimtkuchen">
+                <span class="text-zimtkuchen">15.09.2025</span>
+            </div>
+        </div>
+
+        <div class="zutaten-section-zimtkuchen">
+            <div class="portionen-box-zimtkuchen">
+                <!-- button -->
+                <section class="portionen-inputs">
+                <label for="portionen-zimtkuchen">zutaten für </label>
+                <input type="number" id="portionen-zimtkuchen" value="4" min="1" max="20" oninput="this.value = Math.max(1, Math.min(20, this.value))">
+                <button onclick="updateIngredientsZimtkuchen()">Portionen</button>
+                <body onload="updateIngredientsZimtkuchen()"></body>
+                </section>
+            </div>
+
+            <table class="zutaten-tabelle-zimtkuchen" id="zutatenliste-zimtkuchen">
+                <tr><td data-menge="200">200 g weiche Butter</td></tr>
+                <tr><td data-menge="150">150 g Zucker (weiß + braun)</td></tr>
+                <tr><td data-menge="4">4 Eier (Größe M)</td></tr>
+                <tr><td data-menge="1">1 TL Vanillepaste oder Vanillezucker</td></tr>
+                <tr><td data-menge="150">150 g Weizenmehl (Typ 405)</td></tr>
+                <tr><td data-menge="100">100 g gemahlene Haselnüsse</td></tr>
+                <tr><td data-menge="3">3 TL Backpulver</td></tr>
+                <tr><td data-menge="3.5">3–4 TL Ceylon-Zimt</td></tr>
+                <tr><td data-menge="150">150 ml Milch</td></tr>
+            </table>
+        </div>
+
+        <section class="zubereitung-section-zimtkuchen">
+            <h2>Zubereitung</h2>
+            <div class="zubereitung-infos-zimtkuchen">
+                <div class="info-box-zimtkuchen">
+                    <img src="./img/logos/clock-regular.svg" alt="Uhr Icon" class="icon-zimtkuchen">
+                    <div>
+                        <div class="info-value-zimtkuchen">Gesamtzeit ca. 40 Min.</div>
+                    </div>
+                </div>
+                <div class="info-box-zimtkuchen">
+                    <img src="./img/logos/clock-regular.svg" alt="Uhr Icon" class="icon-zimtkuchen">
+                    <div>
+                        <div class="info-value-zimtkuchen">Backzeit ca. 20 Min.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="zubereitung-text-zimtkuchen">
+               <p>Die Butter mit Zucker und Vanillepaste schaumig rühren. Danach die Eier einzeln hinzufügen und gut unterrühren. In einer separaten Schüssel Mehl, Backpulver, gemahlene Haselnüsse und Zimt vermengen. Die trockenen Zutaten abwechselnd mit der Milch unter die Butter-Ei-Masse heben, bis ein glatter Teig entsteht. Den Teig gleichmäßig auf ein mit Backpapier belegtes Backblech (ca. 40x30 cm) streichen und im vorgeheizten Backofen bei 180 °C Ober-/Unterhitze (oder 160 °C Umluft) etwa 20 Minuten backen. Den Kuchen aus dem Ofen nehmen und vollständig auskühlen lassen.</p>
+               <p class="zusatz-text">
+                Frosting, einfach mixen:<br>
+                240 g Puderzucker<br>
+                7 ml Milch<br>
+                2 EL Frischkäse
+                </p>
+             </div>
+        </section>
+        
+    
+        <div class="created-by-zimtkuchen">
+            <h3>Rezept erstellt von</h3>
+            <div class="author-box-zimtkuchen">
+                <img src="./img/rezept-3/profile.png" alt="Autor" class="author-img-zimtkuchen">
+                <span class="author-name-zimtkuchen">Habiba Mohamed</span>
+            </div>    
+        </div>
+    </div>
+        
+
+<!-- <div class="zubereitung-section-zimtkuchen"></div> -->
+
+
+
+
+
+<footer id="footer">
+    <section>
+    
+    <div class="impressum-img">
+      <a href="index.html" target="_blank"> 
+        <img src="./img/logos/kochwelt-footer-logo.png" alt="logo Kochwelt">
+      </a>
+      <div class="impressum">
+        <a id="impressum" href="./Impressum.html" target="_blank">Impressum</a>
+        <a href="./datenschutzerklärung.html" target="_blank">Datenschutzerklärung</a>
+      </div>
+    </div>
+    
+    <div class="footer-logo">
+      <a href="https://www.facebook.com/" target="_blank">
+          <img src="./img/Find-us-on-facebook.svg.png" alt="Facebook"></a>
+      <a href="https://www.instagram.com/" target="_blank">
+          <img src="./img/logos/follow-us-on-instagram.jpg" alt="instagram"></a>
+      <a href="https://x.com/" target="_blank"
+          ><img src="./img/logos/follow-us-on-twitter.png" alt="twitter"></a>
+    </div>
+    </section>
+  </footer>
+  
+</body>
+</html>

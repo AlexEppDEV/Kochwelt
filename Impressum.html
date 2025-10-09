@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum Kochwelt</title>
+    <link rel="icon" href="./img/logos/logo_small.png" type="image/png">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./navbar.css">
+    <style>
+      html {
+          margin: 0;
+          scroll-behavior: smooth;
+          font-family: "Raleway", sans-serif;
+          font-weight: 400; 
+          font-size: 16px;
+      }
+
+    body {
+   
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 0;
+    }
+
+    main {       
+        font-size: 16px;        
+        max-width: 1440px;
+        width: 100%;
+        padding: 24px 180px;
+        margin: 0;
+        box-sizing: border-box;
+        min-height: 80vh;
+
+    }
+
+     
+      h1 {
+          font-family: "Raleway", sans-serif;
+          font-weight: 700; /* fett */
+          font-size: 42px;
+          padding-top: 130px;
+          padding-bottom: 24px;
+          margin: 0;
+      }
+
+      h2 {
+          font-family: "Raleway", sans-serif;
+          font-weight: 700; /* fett */
+          font-size: 32px;
+          padding-bottom: 24px;
+          margin: 0;
+      }
+      h3 {
+          font-family: "Raleway", sans-serif;
+          font-weight: 700; /* fett */
+          font-size: 24px;
+          padding-bottom: 24px;
+          margin: 0;
+      }
+      main a {
+          overflow-wrap: anywhere;
+      }
+
+        /*  Tablets & kleine Laptops: 768px – 1280px */
+      @media (min-width: 768px) and (max-width: 1280px) {
+
+      /* section main */
+
+      main {
+          padding: 24px 80px;
+          font-size: 16px;
+          margin: 0;
+      }
+      h1 { 
+          font-size: 36px;
+          padding-top: 90px; 
+      }
+        h2 {
+          font-size: 30px;
+
+        }
+        h3 { 
+          font-size: 24px; 
+      }
+        body {
+          font-size: 16px;
+          margin: 0;
+      }
+
+      }
+
+      /*  Smartphones: 320px – 767px */
+      @media (min-width: 300px) and (max-width: 768px) {
+
+      /* section main */
+
+      main {
+          padding: 24px 8px;
+          font-size: 16px;
+          margin: 0; 
+      }
+      h1 { 
+          font-size: 24px;
+          padding-top: 60px; 
+      }
+        h2 {
+          font-size: 20px;
+        }
+
+        h3 { 
+          font-size: 18px; 
+      }
+        body {
+          font-size: 16px;
+          margin: 0;
+        }
+
+          
+      }
+/* Fonts typ */
+@font-face {
+    font-family: "Raleway";
+    src: url("./fonts/Raleway/Raleway-Regular.ttf") format("truetype");
+    font-weight: 400; /* normal */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("./fonts/Raleway/Raleway-Bold.ttf") format("truetype");
+    font-weight: 700; /* fett */
+    font-style: normal;
+}        
+
+
+    </style>
+    <script>
+      function toggleMenu() {
+      const menu = document.getElementById("burgerMenu");
+      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+    }
+    </script>
+</head>
+<body>
+<header>
+    <section>
+        <div class="navbar">
+          <a href="index.html">
+          <img class="logo" src="img/logos/logo.png">
+          </a>
+          <ul class="nav-links">
+            <li><a href="index.html">Start</a></li>
+            <li><a href="rezept-ts.html" class="rezept-link">Rezept des Tages</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="Impressum.html">Impressum</a></li>
+          </ul>
+        </div>
+
+      <div class="burger" onclick="toggleMenu()">
+        &#9776;  
+      </div>
+      <div id="burgerMenu" class="burger-menu">
+        <a href="index.html">Start</a>
+        <a href="rezept-ts.html">Rezept des Tages</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="Impressum.html">Impressum</a>
+      </div>
+    </section>
+  </header>
+
+
+    <main>
+       <h1>Impressum</h1>
+
+        <p>Alex Epp<br />
+        Vogelrohrsheide 67<br />
+        <br />
+        48167 M&uuml;nster</p>
+
+        <h2>Kontakt</h2>
+        <p>Telefon: 015253574456<br />
+        E-Mail: lex8472@web.de</p>
+
+        <p>Quelle: <a href="https://www.e-recht24.de">https://www.e-recht24.de</a></p> 
+    </main>
+
+
+<footer id="footer">
+  <section>
+    
+    <div class="impressum-img">
+      <a href="index.html" target="_blank"> 
+        <img src="./img/logos/kochwelt-footer-logo.png" alt="logo Kochwelt">
+      </a>
+      <div class="impressum">
+        <a id="impressum" href="./Impressum.html" target="_blank">Impressum</a>
+        <a href="./datenschutzerklärung.html" target="_blank">Datenschutzerklärung</a>
+      </div>
+    </div>
+    
+    <div class="footer-logo">
+      
+      <a href="https://www.facebook.com/" target="_blank">
+          <img src="./img/logos/Find-us-on-facebook.svg.png" alt="Facebook"></a>
+      <a href="https://www.instagram.com/" target="_blank">
+          <img src="./img/logos/follow-us-on-instagram.jpg" alt="instagram"></a>
+      <a href="https://x.com/" target="_blank"
+          ><img src="./img/logos/follow-us-on-twitter.png" alt="twitter"></a>
+    </div>
+    </section>
+  </footer>
+</body>
+</html>

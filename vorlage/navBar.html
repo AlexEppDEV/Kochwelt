@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>footer-alex</title>
+  <link rel="stylesheet" href="./navbar.css">
+  <script src="navbar.js"></script>
+  <!-- <script>
+    function toggleMenu() {
+    const menu = document.getElementById("burgerMenu");
+    menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+    }
+  </script> -->
+    
+</head>
+<body>
+
+  <!-- nur navBar  bereich einfügen -->
+   <header>
+    <div class="navbar">
+          <a href="index.html">
+          <img class="logo" src="img/logos/logo.png">
+          </a>
+          <ul class="nav-links">
+          <li><a href="index.html">Start</a></li>
+          <li><a href="rezept-2.html" class="rezept-link">Rezept des Tages</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="Impressum.html">Impressum</a></li>
+        </ul>
+    </div>
+
+    <div class="burger" onclick="toggleMenu()">
+      &#9776;  
+    </div>
+      
+
+    <div id="burgerMenu" class="burger-menu">
+        <a href="index.html">Start</a>
+        <a href="rezept-2.html">Rezept des Tages</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="impressum.html">Impressum</a>
+    </div>
+  </header>
+
+</body>
+</html>
+

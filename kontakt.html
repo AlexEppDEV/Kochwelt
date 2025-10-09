@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="rezept-r&bstyle.css">  -->
+    <link rel="stylesheet" href="navbar.css"> 
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="kontakt.css">
+
+    <link rel="icon" href="./img/logos/logo_small.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> -->
+    
+    <title>Kochwelt</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- <script src="rezept-r&bscript.js"></script> -->
+    <script src="script.js"></script>
+</head>
+
+<body class="kontakt-seite">
+  <header>
+      <section class="navbar">
+        <a href="index.html">
+        <img class="logo" src="img/logos/logo.png">
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Start</a></li>
+          <li><a href="rezept-ts.html" class="rezept-link">Rezept des Tages</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="Impressum.html">Impressum</a></li>
+        </ul>
+      </section>
+
+      <div class="burger" onclick="toggleMenu()">
+        &#9776;  
+      </div>
+    
+      <div id="burgerMenu" class="burger-menu">
+        <a href="index.html">Start</a>
+        <a href="rezept-ts.html">Rezept des Tages</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="Impressum.html">Impressum</a>
+      </div>
+  </header>
+    
+  <main>
+    <section class="kontakt-container">
+      <form onsubmit ="sendMail(event)" class="kontakt-form">
+        <h2>Kontaktiere uns</h2>
+
+        <label for="name">Dein Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Deine E-Mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="nachricht">Deine Nachricht:</label>
+        <textarea id="nachricht" name="nachricht" rows="15" required></textarea>
+
+        <button type="submit">Abschicken</button>
+      </form>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <section>
+    <div class="impressum-img">
+      <a href="index.html" target="_blank"> 
+        <img class="footer-logo-img" src="./img/logos/kochwelt-footer-logo.png" alt="logo Kochwelt">
+      </a>
+      <div class="impressum">
+        <a id="impressum" href="./Impressum.html" target="_blank">Impressum</a>
+        <a href="./datenschutzerklärung.html" target="_blank">Datenschutzerklärung</a>
+      </div>
+    </div>
+    
+    <div class="footer-logo">
+      <a href="https://www.facebook.com/" target="_blank">
+          <img src="./img/logos/Find-us-on-facebook.svg.png" alt="Facebook"></a>
+      <a href="https://www.instagram.com/" target="_blank">
+          <img src="./img/logos/follow-us-on-instagram.jpg" alt="instagram"></a>
+      <a href="https://x.com/" target="_blank"
+          ><img src="./img/logos/follow-us-on-twitter.png" alt="twitter"></a>
+    </div>
+    </section>
+  </footer>
+
+    
+    </body>
+</html>

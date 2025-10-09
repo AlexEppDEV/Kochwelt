@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rezept-r&bstyle.css">
+    <link rel="stylesheet" href="kontakt.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="icon" href="./img/logos/logo_small.png" type="image/png">
+    <script src="rezept-r&bscript.js"></script>
+    <title>Rindfleisch mit Brokkoli</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+
+<body>
+
+   
+
+    <header>
+    <section class="navbar">
+        <a href="index.html">
+        <img class="logo" src="img/logos/logo.png">
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Start</a></li>
+          <li><a href="rezept-ts.html" class="rezept-link">Rezept des Tages</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="Impressum.html">Impressum</a></li>
+        </ul>
+      </section>
+
+      <div class="burger" onclick="toggleMenu()">
+        &#9776;  
+      </div>
+        
+
+      <div id="burgerMenu" class="burger-menu">
+        <a href="index.html">Start</a>
+        <a href="rezept-ts.html">Rezept des Tages</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="Impressum.html">Impressum</a>
+      </div>
+
+    
+    
+  </header>
+    
+
+
+   <div class="content">
+
+    <section class="hero">
+    <h1 class="headline">Rindfleisch mit Brokkoli</h1>
+        <img class="food" src="img/rezept-2/rindfleischbrokkolii.jpg">
+   
+   
+   
+   <div class="info-boxes">
+  <div class="info-box">
+    <img src="img/logos/clock-regular.svg"Uhr Icon class="icon">
+    <span class="text">30 Min.</span>
+  </div>
+  <div class="info-box">
+    <img src="img/logos/brain-solid.svg"Brain Icon class="icon">
+    <span class="text">Mittel</span>
+  </div>
+  <div class="info-box">
+    <img src="img/logos/calendar-alt-regular.svg"Datum Icon class="icon">
+    <span class="text">15.09.2025</span>
+  </div>
+</div>
+   </section>     
+<section class="zutaten-section">
+  
+
+<div class="portionen-box">
+  <label for="portionen" class="zutaten-heading">Zutaten für</label>
+  <div class="portionen-inputs">
+    <input 
+      type="number" 
+      id="portionen" 
+      value="4" 
+      min="1" 
+      max="20"
+      oninput="this.value = Math.max(1, Math.min(20, this.value))"
+    >
+    <button onclick="updateIngredients()">Portionen</button>
+    
+  </div>
+</div>
+
+    <table class="zutaten-tabelle" id="zutatenliste">
+    <tr><td data-menge="125">125 g Rindfleisch</td></tr>
+    <tr><td data-menge="200">200 g Brokkoli</td></tr>
+    <tr><td data-menge="1">1 EL Sojasauce</td></tr>
+    <tr><td data-menge="0.5">0.5 TL Salz</td></tr>
+    <tr><td data-menge="1">1 Frühlingszwiebel(n)</td></tr>
+    <tr><td data-menge="2.5">2.5 g geschälter Ingwer</td></tr>
+    <tr><td data-menge="0.5">0.5 Knoblauchzehe(n)</td></tr>
+    <tr><td data-menge="0.25">0.25 Möhre(n)</td></tr>
+    <tr><td data-menge="0.5">0.5 Speisezwiebel(n)</td></tr>
+    <tr><td data-menge="0.5">0.5 EL Pflanzenöl</td></tr>
+  </table>
+</section>
+
+<section class="zubereitung-section">
+  <h2>Zubereitung</h2>
+
+  <div class="zubereitung-infos">
+    <div class="info-box">
+      <img src="img/logos/clock-regular.svg"Uhr Icon" class="icon">
+      <div>
+        <div class="info-value">ca. 15 Minuten</div>
+      </div>
+    </div>
+
+    <div class="info-box">
+      <img src="img/logos/clock-regular.svg"Uhr Icon" class="icon">
+      <div>
+        <div class="info-value">Gesamtzeit ca. 30 Minuten</div>
+      </div>
+    </div>
+  </div>
+   <div class="zubereitung-text">
+    <p>Rindfleisch in feine Streifen schneiden und kurz in einer heißen Pfanne mit etwas Öl anbraten.
+    Brokkoli in Röschen teilen, kurz blanchieren und zum Fleisch geben.
+    Ingwer, Knoblauch und Zwiebeln hinzufügen, mit Sojasauce und etwas Brühe ablöschen.
+    Alles kurz köcheln lassen, bis der Brokkoli bissfest ist - anschließend servieren.</p>
+    <p>Tipp: Am besten mit Reis oder Nudeln genießen.</p>
+  </div>
+</section>
+
+<section class="created-by">
+  <h3>Rezept erstellt von</h3>
+  <div class="author-box">
+    <img src="img/rezept-2/profile.png" alt="Autor" class="author-img">
+    <span class="author-name">Florian</span>
+  </div>
+</section>
+    
+
+
+
+   </div>
+
+    
+       <footer id="footer">
+    <section>
+    <div class="impressum-img">
+      <a href="index.html" target="_blank"> 
+        <img class="footer-logo-img" src="img/kochwelt-footer-logo.png" alt="logo Kochwelt">
+      </a>
+      <div class="impressum">
+        <a id="impressum" href="./Impressum.html" target="_blank">Impressum</a>
+        <a href="./datenschutzerklärung.html" target="_blank">Datenschutzerklärung</a>
+      </div>
+    </div>
+    
+    <div class="footer-logo">
+      <a href="https://www.facebook.com/" target="_blank">
+          <img src="img/logos/Find-us-on-facebook.svg.png" alt="Facebook"></a>
+      <a href="https://www.instagram.com/" target="_blank">
+          <img src="img/logos/follow-us-on-instagram.jpg" alt="instagram"></a>
+      <a href="https://x.com/" target="_blank"
+          ><img src="img/logos/follow-us-on-twitter.png" alt="twitter"></a>
+    </div>
+    </section>
+  </footer>
+  
+</body>
+</html>
+

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Kochwelt — Rezept des Tages</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="./footer.css">
+<link rel="stylesheet" href="./navbar.css">
+<link rel="icon" href="./img/logos/logo_small.png" type="image/png">
+<script src="script.js"></script>
+</head>
+
+
+<body>
+
+  <header>
+    <section>
+      <div class="navbar">
+        <a href="index.html">
+        <img class="logo" src="img/logos/logo.png">
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Start</a></li>
+          <li><a href="rezept-ts.html" class="rezept-link">Rezept des Tages</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="Impressum.html">Impressum</a></li>
+        </ul>
+      </div>
+
+      <div class="burger" onclick="toggleMenu()">
+        &#9776;  
+      </div>
+      <div id="burgerMenu" class="burger-menu">
+        <a href="index.html">Start</a>
+        <a href="rezept-ts.html">Rezept des Tages</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="Impressum.html">Impressum</a>
+      </div>
+    </section>
+  </header>
+
+
+<main>
+  <section class="hero">
+    <div class="hero-card">
+      <img src="./img/rezept-1/salat.jpg" alt="Thunfischsalat" class="hero-image">
+    </div>
+    <div class="hero-text">
+      <h1>Thunfischsalat</h1>
+      <p class="lead">Frischen Salat waschen und in mundgerechte Stücke schneiden. 
+        Thunfisch aus der Dose abtropfen lassen und zusammen mit dem Salat in eine Schüssel geben. 
+        Tomaten, Gurken und Zwiebeln hinzufügen. 
+        Mit Olivenöl, Zitronensaft, Salz und Pfeffer abschmecken und alles gut vermengen. 
+        Anschließend sofort servieren
+      </p>
+      <a class="cta" href="rezept-ts.html">Rezept öffnen</a>
+    </div>
+  </section>
+
+  <section class="cards-section">
+    <div class="container">
+      <h2 class="section-title">Lust auf was Neues?</h2>
+      <div class="cards">
+        <article class="card">
+          <a href="rezept-r&b.html">
+            <img src="./img/rezept-2/rindfleischbrokkolii.jpg" alt="Rindfleisch mit Brokkoli">
+          </a>
+          <span>Rindfleisch mit Brokkoli</span>
+        </article>
+  
+        <article class="card">
+          <a href="rezept-ts.html">
+            <img src="./img/rezept-1/salat.jpg" alt="Thunfischsalat">
+          </a>
+          <span>Thunfischsalat</span>
+        </article>
+  
+        <article class="card">
+          <a href="rezept-zk.html">
+            <img src="./img/zimtkuchen.jpg" alt="Zimtkuchen">
+          </a>
+          <span>Zimtkuchen</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="article">
+    <h2>Pfanne vs. Wok - Was ist besser?</h2>
+    <div class="article-grid">
+      <p class="article-text">Die Pfanne verteilt die Hitze gleichmäßig, ideal fürs Braten. 
+        Der Wok ist in der Mitte heißer, an den Rändern kühler – perfekt fürs schnelle Anbraten und Warmhalten.</p>
+      <div class="article-image-wrap">
+        <img src="./img/wok.jpg" alt="Wok">
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="footer">
+  <section>
+    
+    <div class="impressum-img">
+      <a href="index.html" target="_blank"> 
+        <img src="./img/logos/kochwelt-footer-logo.png" alt="logo Kochwelt">
+      </a>
+      <div class="impressum">
+        <a id="impressum" href="./Impressum.html" target="_blank">Impressum</a>
+        <a href="./datenschutzerklärung.html" target="_blank">Datenschutzerklärung</a>
+      </div>
+    </div>
+    
+    <div class="footer-logo">
+      <a href="https://www.facebook.com/" target="_blank">
+          <img src="./img/logos/Find-us-on-facebook.svg.png" alt="Facebook"></a>
+      <a href="https://www.instagram.com/" target="_blank">
+          <img src="./img/logos/follow-us-on-instagram.jpg" alt="instagram"></a>
+      <a href="https://x.com/" target="_blank"
+          ><img src="./img/logos/follow-us-on-twitter.png" alt="twitter"></a>
+    </div>
+  </section>
+</footer>
+
+
+
+</body>
+</html>
